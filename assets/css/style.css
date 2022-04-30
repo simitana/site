@@ -3,8 +3,8 @@ body {
     margin: 0;
     box-sizing: border-box;
     color: #f9322c;
-    background-image: url('../background.jpg');
-    font-family: Inter;
+    background-image: url('../imgs/background.webp');
+    background-size: cover;
 }
 
 .container {
@@ -14,28 +14,30 @@ body {
     background-color: #111118;
     padding: 20px;
     margin: 200px auto;
+
+    @media (max-width: 10px) {
+        display: flex;
+        width: 600px;
+        background: red;
+      }
 }
 
+.logo {
+    width: 400px;
+    height: auto;
+
+
+}
 .container h1 {
-    font-size: 26px;
+    font-size: 1em;
 }
 
-.container h2 {
-    font-size: 18px;
-}
-
-.container button {
-    align-content: center;
-    background: #FF2D20;
-    width: 200px;
-    height: 36px;
-    border: none;
-    color: white;
-    font-size: 18px;
-}
-
-.container button:hover {
-    width: 210px;
-    height: 38px;
-    cursor: pointer;
-}
+@media (max-width: 450px) {
+    body {
+        background-size: auto;
+    }
+    .container img {
+        width: 200px;
+        height: auto;
+    }
+   }
